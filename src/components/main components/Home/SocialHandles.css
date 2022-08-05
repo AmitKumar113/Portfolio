@@ -1,0 +1,10 @@
+.social-handles-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-handles-container div{
+    margin: 10px 30px;
+    cursor: pointer;
+}

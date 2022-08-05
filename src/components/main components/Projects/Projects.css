@@ -1,0 +1,27 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+
+.main-container-projects{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading{
+    font-size: 50px;
+    margin: 30px 0;
+}
+
+.projects-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}

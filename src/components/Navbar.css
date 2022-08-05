@@ -1,0 +1,57 @@
+.container{
+    display: flex;
+    background-color: rgb(203 209 208 / 54%);
+    width: 100vw;                                   
+    /* height: 100px; */
+}
+
+.navbar-first{
+    flex: 1;
+    font-family: 'Abril Fatface';
+    font-size: 34px;
+    padding-left: 21px;
+}
+
+.navbar-middle{
+    display: flex;
+    width: fit-content;
+    font-size: large;
+    flex: 5;
+    margin: 0;
+}
+
+.navbar-last{
+    flex: 8;
+    display : flex;
+    justify-content: flex-end;
+}
+
+.navbar-middle li{
+    margin: 10px;
+    padding: 2px 6px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.download-btn{
+    text-align: end;
+    margin: auto 25px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.darkmode-icon{
+    padding: 0 10px;
+    margin: 0 36px;
+    cursor: pointer;
+}
+
+.border{
+    border: 1px solid black;
+}
+
+.flex-container{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
