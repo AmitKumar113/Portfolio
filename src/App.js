@@ -28,6 +28,10 @@ export default class App extends Component {
   }
 }
 
+<<<<<<< HEAD
 
 // v r in the master branch
 
+=======
+// v r in the responsiveness branch after a merge
+>>>>>>> responsiveness
