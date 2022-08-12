@@ -7,17 +7,24 @@ html{
     border: 1px solid black;
     border-radius: 1px;
     width: 25vw;
-    min-width: 150px;
+    min-width: 200px;
     max-width: 250px;
     height: 40vh;
+    max-height: 400px;
     margin: 20px 20px;
     padding: 10px 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    cursor: default;
 }
+
+.main-container-project:hover{
+    transition: all 0.3s;
+    transform: scale(1.1);
+}
+
 
 .project-name{
     text-align: center;
@@ -27,6 +34,7 @@ html{
 
 .project-description{
     flex: 1;
+    margin: 4px 10px;
 }
 
 .btns{
@@ -39,6 +47,13 @@ html{
     background-color: white;
     border-radius: 1px;
     flex: 1;
+    cursor: pointer;
+}
+
+.project-btns:hover{
+    transition: 0.17s;
+    background-color: black;
+    color: white;
 }
 
 .project-btn1{
@@ -51,4 +66,26 @@ html{
 
 .card{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.socialhandles-projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 50px 0;
+}
+
+.p1{
+    font-size: 30px;
+}
+
+.p2{
+    font-size: 15px ;
+}
+
+.p3{
+    margin: 15px 0 5px 0;
+    font-size: 20px
 }

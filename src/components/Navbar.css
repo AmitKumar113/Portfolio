@@ -1,7 +1,7 @@
 .container{
     display: flex;
     background-color: rgb(203 209 208 / 54%);
-    width: 100%;                                   
+    width: 100vw;                                   
     /* height: 100px; */
 }
 
@@ -10,14 +10,18 @@
     font-family: 'Abril Fatface';
     font-size: 34px;
     padding-left: 21px;
+    cursor: pointer;
 }
 
 .navbar-middle{
     display: flex;
-    width: fit-content;
+    /* width: fit-content; */
     font-size: large;
     flex: 5;
     margin: 0;
+    width: 100%;
+    height: 100%;
+    /* justify-content: center; */
 }
 
 .navbar-last{
@@ -27,10 +31,19 @@
 }
 
 .navbar-middle li{
-    margin: 10px;
-    padding: 2px 6px;
+    flex: 1;
+    margin: 0px;
+    padding: 0px 10px;
     list-style: none;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-middle li:hover, .navbar-middle li:target{
+    background-color: rgba(203, 209, 208, 0.781); 
+    /* font-weight: bold; */
 }
 
 .download-btn{
@@ -46,6 +59,31 @@
     cursor: pointer;
 }
 
+.burger-container{
+    visibility: hidden;
+    position: absolute;
+    /* top: 27px;
+    right: 50px; */
+    /* display: none; */
+    width: 80px;
+    height: 50px;
+}
+
+.burger{
+    /* display: none; */
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.line{
+    width: 80%;
+    height: 2px;
+    background-color: black;
+    margin: 5px 3px;
+}
+
+
 .border{
     border: 1px solid black;
 }
@@ -55,3 +93,18 @@
     justify-content: center;
     align-items: center;
 }
+
+@media only screen and (max-width: 600px) {
+    /* body {
+      background-color: lightblue;
+    } */
+
+    .navbar-middle, .darkmode-icon, .download-btn{
+        visibility: hidden;        
+    }
+
+    .burger-container, .burger{
+        visibility: visible;
+    }
+
+  }

@@ -85,3 +85,17 @@
     justify-content: center;
     align-items: center;
 }
+
+@media only screen and (max-width: 600px){
+
+    body{
+    }
+    
+    .introduction-box{
+        flex-direction: column;
+    }
+
+    .image-introduction-box{
+        justify-content: center;
+    }
+}
