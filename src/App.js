@@ -14,7 +14,23 @@ import {
 import './App.css'
 
 export default class App extends Component {
+
+  constructor(){
+    super()
+
+    this.state={
+      mode : 'light'
+    }
+  }
+
   render() {
+
+    // console.log(document.querySelector('.darkmode-icon').addEventListener('click',
+    //     ()=>{
+    //             console.log('icon clicked')
+    //     }
+    // ))
+   
     return (
       // <Router>
         <Router>
@@ -30,7 +46,7 @@ export default class App extends Component {
           <Route exact  path='/contact'  element={<Contact/>}/>
           <Route  path='/' element={<Home/>}/>
         </Routes>
-        <Footer/>
+        <Footer mode='dark'/>
         </div>
         </Router>
       // </Router>

@@ -8,3 +8,8 @@
     margin: 10px 30px;
     cursor: pointer;
 }
+
+.social-handles-container img:hover{
+    transition: all 0.17s;
+    transform: scale(1.2);
+}

@@ -11,7 +11,7 @@ export default class SocialHandles extends Component {
       <div className='social-handles-container'>
         <div><img src={Instagram} alt='Instagram Icon'/></div>
         <div><img src={Facebook} alt='Facebook Icon'/></div>
-        <div><img src={Linkedin} alt='Linkedin Icon'/></div>
+        <div><a href='https://www.linkedin.com/in/amit-kumar-021b45204/'><img src={Linkedin} alt='Linkedin Icon'/></a></div>
         <div><img src={Twitter} alt='Twitter Icon'/></div>
       </div>
     )

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import SocialHandles from './SocialHandles'
+import Type from './Type'
 import './Home.css'
 
 export default class Home extends Component {
@@ -9,9 +10,10 @@ export default class Home extends Component {
         <div className='text-and-image-container'>
         <div className='text-box'>
           <div>
-            <h3>Hi, There</h3>
-            <h1>I'm AMIT KUMAR</h1>
-            <p>FRONT-END DEVELOPER</p>
+            <section>Hi, There</section>
+            <p>I'm AMIT KUMAR</p>
+            {/* <p></p> */}
+          <Type/>
           </div>
         </div>
         <div className='image-box'>

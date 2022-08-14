@@ -3,14 +3,13 @@ html{
     margin: 0;
     /* width: 100vw; */
     width: fit-content;
-    height: fit-content;
+    height: 100vh;
     /* border: 1px solid yellow; */
 }
 
-/* body{
-    width: 100vw;
-    height: 100%;
-} */
+body{
+    margin: 0;
+}
 
 .container-app{
     display: flex;
@@ -20,6 +19,18 @@ html{
     /* border: 1px solid red; */
 }
 
-/* .home{
-    flex: 1;
+/* .text-light{
+}
+
+.text-dark{
 } */
+
+.mode-light{
+    color: black;
+    background-color: white;
+}
+
+.mode-dark{
+    color: white;
+    background-color: #333;
+}
