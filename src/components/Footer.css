@@ -5,3 +5,8 @@
     font-family: 'Montserrat';
     height: 16px;
 }
+
+.footer-mode-dark{
+    background-color: black;
+    color: white;
+}

@@ -5,14 +5,14 @@ html{
 
 .main-container-project{
     border: 1px solid black;
-    border-radius: 1px;
+    border-radius: 10px;
     width: 25vw;
     min-width: 200px;
     max-width: 250px;
     height: 40vh;
     max-height: 400px;
     margin: 20px 20px;
-    padding: 10px 10px;
+    /* padding: 10px 10px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,11 +43,14 @@ html{
 }
 
 .project-btns{
-    padding: 5px 10px;
+    padding: 10px 10px;
     background-color: white;
     border-radius: 1px;
-    flex: 1;
+    flex: 1 1;
     cursor: pointer;
+    border: none;
+    /* border-radius: 10px; */
+    border-top: 1px solid black;
 }
 
 .project-btns:hover{
@@ -57,15 +60,17 @@ html{
 }
 
 .project-btn1{
-    margin-right: 10px  ;
+    /* margin-right: 10px  ; */
+    border-radius: 0 0 0 10px; 
 }
 
 .project-btn2{
-    margin-left: 10px  ;
+    border-radius: 0 0 10px 0; 
+    /* margin-left: 10px  ; */
 }
 
 .card{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 3px 2px 0px 0 black;
 }
 
 .socialhandles-projects{
@@ -88,4 +93,26 @@ html{
 .p3{
     margin: 15px 0 5px 0;
     font-size: 20px
+}
+
+.home-mode-dark .main-container-project{
+    border-color: #C9D1D9;
+    background-color: #1c1b1bd4;
+}
+
+.home-mode-dark .card{
+    box-shadow: 3px 2px 0px 0 #C9D1D9;
+
+}
+
+.home-mode-dark .project-btns{
+    background-color: black;
+    color: #C9D1D9;
+    border-color: #C9D1D9;
+}
+
+.home-mode-dark .project-btns:hover{
+    background-color: #C9D1D9;
+    color: black;
+    
 }

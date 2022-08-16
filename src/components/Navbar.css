@@ -49,7 +49,7 @@
     /* font-size: small; */
 }
 
-.navbar-middle li:hover, .navbar-middle li:target{
+.navbar-middle li:hover{
     background-color: rgba(203, 209, 208, 0.781); 
     /* font-weight: bold; */
 }
@@ -61,10 +61,22 @@
     cursor: pointer;
 }
 
+.download-btn a{
+    color: black;
+}
+
+
 .darkmode-icon{
+    width: 40px;
     padding: 0 10px;
-    margin: 0 36px;
+    margin: 0 10px;
     cursor: pointer;
+}
+
+.darkmode-icon svg{
+    position: absolute;
+    top: 10px;
+    right: 25px;
 }
 
 .burger-container{
@@ -91,6 +103,22 @@
     margin: 5px 3px;
 }
 
+.navbar-mode-dark{
+    background-color: black;
+    color: #C9D1D9;
+}
+
+.navbar-mode-dark .navbar-middle li a{
+    color: #C9D1D9;
+} 
+
+.navbar-mode-dark .navbar-middle li:hover{
+    background-color: #333;
+}
+
+.navbar-mode-dark .download-btn a{
+    color: #C9D1D9;
+}
 
 .border{
     border: 1px solid black;

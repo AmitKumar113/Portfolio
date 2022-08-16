@@ -58,3 +58,12 @@ html{
 
 }
 
+.home-mode-dark{
+    background-color: #333;
+    /* color: white; */
+    color: #C9D1D9;
+}
+
+.home-mode-dark .image-box div{
+    border: 2px solid #C9D1D9;
+}

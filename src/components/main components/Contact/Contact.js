@@ -13,7 +13,7 @@ export default class Contact extends Component {
 
   render() {
     return (
-      <div className='container-contact flex-container'>
+      <div className={`container-contact flex-container home-mode-${this.props.mode}`}>
       <Helmet>
       <script src="https://smtpjs.com/v3/smtp.js" type="text/javascript" />
       </Helmet>

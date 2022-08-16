@@ -9,7 +9,7 @@
     cursor: pointer;
 }
 
-.social-handles-container img:hover{
+.social-handles-container svg:hover{
     transition: all 0.17s;
     transform: scale(1.2);
 }
