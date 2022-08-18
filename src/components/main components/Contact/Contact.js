@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './Contact.css'
-import {Helmet} from "react-helmet"
+import ContactImage from '../../../assets/contact.png'
+// import {Helmet} from "react-helmet"
 // import Smtp from 'https://smtpjs.com/v3/smtp.js'
 // import emailjs from '@emailjs/browser';
 
@@ -13,20 +14,22 @@ export default class Contact extends Component {
 
   render() {
     return (
-      <div className={`container-contact flex-container home-mode-${this.props.mode}`}>
-      <Helmet>
-      <script src="https://smtpjs.com/v3/smtp.js" type="text/javascript" />
-      </Helmet>
-          <div className='form-container'>
+      <div className={`container-contact flex-container  home-mode-${this.props.mode}`}>
+          <div className='image-container-contact '>
+            <img src={ContactImage} alt='image'/>
+          </div>
+          
+          
+          <div className='form-container '>
               <form className='contact-form'>
-                <input type='text' placeholder='Name' className='input-box'></input>
-                <input type='email' placeholder='Email ID' className='input-box'></input>
-                <input type='number' placeholder='Mobile number' className='input-box'></input>
-                <input type='text' placeholder='Organisation' className='input-box'></input>
-                <textarea rows="7"  placeholder='Write to us!' />
+                <input type='text' placeholder='Name' className={`input-box home-mode-${this.props.mode}`}></input>
+                <input type='email' placeholder='Email ID' className={`input-box home-mode-${this.props.mode}`}></input>
+                <input type='number' placeholder='Mobile number' className={`input-box home-mode-${this.props.mode}`}></input>
+                <input type='text' placeholder='Organisation' className={`input-box home-mode-${this.props.mode}`}></input>
+                <textarea rows="5"  placeholder='Write to us!' className={`home-mode-${this.props.mode}`}/>
                 {/* <input type='submit' className='submit-button'></input> */}
               </form>
-                <button className='send-btn' onClick={this.sendMail}>SEND</button>
+                <button className={`send-btn send-btn-${this.props.mode}`} onClick={this.sendMail}>SEND</button>
 
           </div>  
       </div>
