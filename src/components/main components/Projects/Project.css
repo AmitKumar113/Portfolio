@@ -78,7 +78,7 @@ html{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: fit-content;
     margin: 50px 0;
 }
 
