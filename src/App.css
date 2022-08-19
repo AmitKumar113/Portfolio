@@ -9,16 +9,29 @@ html{
 
 body{
     margin: 0;
+    /* height: 100%; */
 }
 
+/* .router{
+    height: 100vh;   /*changes from vh */
+
 .container-app{
+    /* overflow-x: hidden; */
     display: flex;
-    height: 100%;   /*changes from vh */
+    height: 100vh;   /*changes from vh */
     width: 100%;
     flex-direction: column;
     /* border: 1px solid red; */
 }
 
+/* .container-app :nth-child(2){
+    min-height: 90vh;
+    flex: 1;
+} */
+Footer{
+    /* justify-items: flex-end; */
+    align-self: flex-end;
+}
 
 
 

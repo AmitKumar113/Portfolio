@@ -8,7 +8,7 @@
 .introduction-box{
     /* border: 1px solid black; */
     display: flex;
-    height: 90vh;
+    min-height: 90vh;
     /* flex: 5; */
 }
 
@@ -101,12 +101,28 @@ hr{
 
     body{
     }
+
+    .text-introduction-box{
+        padding: 0 25px;
+    }
     
+    .text-introduction-box h2{
+        margin-top: 15px;
+    }
+
     .introduction-box{
         flex-direction: column;
     }
 
     .image-introduction-box{
         justify-content: center;
+    }
+
+    .professional-skills-box{
+        width: 100%;
+    }
+
+    .skill{
+        margin: 10px;
     }
 }

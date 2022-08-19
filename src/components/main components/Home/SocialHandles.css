@@ -13,3 +13,10 @@
     transition: all 0.17s;
     transform: scale(1.2);
 }
+
+@media only screen and (max-width: 600px){
+    .social-handles-container div{
+        margin: 10px 15px;
+    }
+
+}

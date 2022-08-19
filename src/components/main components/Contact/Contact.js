@@ -21,12 +21,13 @@ export default class Contact extends Component {
           
           
           <div className='form-container '>
+            <h1>Write to us</h1>
               <form className='contact-form'>
                 <input type='text' placeholder='Name' className={`input-box home-mode-${this.props.mode}`}></input>
                 <input type='email' placeholder='Email ID' className={`input-box home-mode-${this.props.mode}`}></input>
                 <input type='number' placeholder='Mobile number' className={`input-box home-mode-${this.props.mode}`}></input>
                 <input type='text' placeholder='Organisation' className={`input-box home-mode-${this.props.mode}`}></input>
-                <textarea rows="5"  placeholder='Write to us!' className={`home-mode-${this.props.mode}`}/>
+                <textarea rows="5"  placeholder='Type your message here.' className={`home-mode-${this.props.mode}`}/>
                 {/* <input type='submit' className='submit-button'></input> */}
               </form>
                 <button className={`send-btn send-btn-${this.props.mode}`} onClick={this.sendMail}>SEND</button>

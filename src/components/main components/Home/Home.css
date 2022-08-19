@@ -6,8 +6,9 @@ html{
 
 .main-container{
     display: flex;
-    height: 90vh;
+    /* height: 90vh; */
     flex-direction: column ;
+    flex: 1;
 }
 
 .text-and-image-container{
@@ -66,4 +67,29 @@ html{
 
 .home-mode-dark .image-box div{
     border: 2px solid #C9D1D9;
+}
+
+@media only screen and (max-width: 600px){
+
+    .text-and-image-container{
+        flex-direction: column-reverse;
+    }
+
+    .image-box div{
+        margin: 30px 0;
+        width: 200px;
+        height: 200px; 
+    }
+
+    .text-box{
+        margin: 0 20px;
+    }
+    
+    .text-box div p{
+        font-size: xx-large;
+    }
+
+    .typewriter{
+        font-size: large;
+    }
 }

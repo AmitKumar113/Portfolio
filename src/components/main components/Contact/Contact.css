@@ -1,6 +1,7 @@
 .container-contact{
-    height: 90vh;
+    height: 100%;
     padding: 0 60px;
+    flex: 1;
     /* display: flex; */
 }
 
@@ -79,4 +80,11 @@ form textarea{
     transition: 0.17s;
     background-color: white;
     color: black;
+}
+
+@media only screen and (max-width: 600px){
+    .image-container-contact{
+        /* visibility: collapse; */
+        display: none;
+    }
 }
